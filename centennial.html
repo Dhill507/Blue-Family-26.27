@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 Year Centennial Celebration | Blue Covenant Family</title>
+  <meta name="description" content="Information, events, schedule, and planning details for the Blue Covenant Family 100 Year Centennial Celebration in May 2027." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><nav class="navbar"><a href="index.html" class="brand"><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><span>Blue Covenant Family</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a class="active" href="centennial.html">Centennial</a></li><li><a href="history.html">History & Legacy</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+
+  <main>
+    <section class="page-hero centennial-hero"><div class="container reveal"><p class="eyebrow">May 2027</p><h1>100 Year Centennial Celebration</h1><p>A sacred family gathering to remember where we came from, celebrate who we are, and prepare the next generation to carry the legacy forward.</p></div></section>
+
+    <section class="section"><div class="container split"><div class="reveal"><p class="section-kicker">Celebration Theme</p><h2>Honoring Our Legacy, Celebrating Our Present, Building Our Future</h2><p>The Centennial Celebration will bring together youth, elders, parents, cousins, extended family, and friends for a historic moment of worship, remembrance, fellowship, and vision.</p></div><div class="countdown-card orbital-countdown-card reveal">
+            <div class="orbital-header">
+              <p class="section-kicker">Family Seal Countdown</p>
+              <h3>Countdown to May 14, 2027</h3>
+            </div>
+
+            <div class="countdown-orbit-stage" id="countdownOrbitStage" aria-label="Countdown timer rotating around the Blue Covenant Family seal">
+              <div class="orbit-ring orbit-ring-one"></div>
+              <div class="orbit-ring orbit-ring-two"></div>
+              <div class="seal-core">
+                <img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family Centennial seal" />
+                <span class="seal-halo"></span>
+              </div>
+              <div id="countdown" class="countdown countdown-orbit"></div>
+            </div>
+          </div></div></section>
+
+    <section class="section blue-section"><div class="container"><div class="section-heading reveal"><p class="section-kicker gold-text">Event Highlights</p><h2>Centennial Celebration Weekend</h2></div><div class="card-grid four"><article class="feature-card dark-card reveal"><h3>Opening Worship Service</h3><p>A faith-centered gathering to thank God for 100 years of family legacy.</p></article><article class="feature-card dark-card reveal"><h3>Family Banquet</h3><p>An elegant evening honoring elders, achievements, milestones, and family unity.</p></article><article class="feature-card dark-card reveal"><h3>Youth & Next Gen Forum</h3><p>A space for younger generations to share ideas, dreams, creativity, and vision.</p></article><article class="feature-card dark-card reveal"><h3>Legacy Presentation</h3><p>Photos, videos, storytelling, and reflections from the family archive.</p></article></div></div></section>
+
+    <section class="section light-section"><div class="container"><div class="section-heading reveal"><p class="section-kicker">Events Calendar</p><h2>Upcoming Family Events</h2></div><div class="calendar-list reveal" id="calendarList"></div></div></section>
+
+    <section class="section"><div class="container split"><div class="reveal"><p class="section-kicker">Volunteer Teams</p><h2>Help Build the Celebration</h2><p>Family members can serve on committees for hospitality, media, youth engagement, elder interviews, registration, fundraising, and event production.</p></div><form class="contact-form reveal"><input type="text" placeholder="Full Name" required /><input type="email" placeholder="Email Address" required /><select required><option value="">Select Volunteer Area</option><option>Hospitality</option><option>Media & Photography</option><option>Youth Committee</option><option>Elder Interviews</option><option>Registration</option><option>Event Planning</option></select><textarea rows="5" placeholder="How would you like to help?"></textarea><button class="btn btn-primary" type="submit">Submit Interest</button><p class="form-message"></p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><p>Preparing for the 100 Year Centennial Celebration.</p></div><a href="index.html">Home</a></div></footer>
+</body>
+</html>

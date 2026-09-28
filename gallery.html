@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Blue Covenant Family</title>
+  <meta name="description" content="Gallery page for the Blue Covenant Family website. Coming soon." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="index.html" class="brand">
+        <img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" />
+        <span>Blue Covenant Family</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="centennial.html">Centennial</a></li>
+        <li><a href="history.html">History & Legacy</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="coming-soon-page">
+      <div class="coming-soon-card reveal">
+        <div class="coming-seal-wrap">
+          <span class="coming-seal-glow"></span>
+          <img class="coming-seal" src="assets/blue-covenant-seal.png" alt="Blue Covenant Family Centennial seal" />
+        </div>
+        <p class="coming-soon-message">
+          This page will be unveiled at the Centennial celebration. Please visit the Home and Centennial pages for the current live information.
+        </p>
+      </div>
+    </section>
+
+    <!--
+      Family photos are staged here for the future Gallery launch, but hidden while this page is Coming Soon.
+      To reveal the gallery later, remove the class "locked-gallery-content" and remove/comment out the Coming Soon section above.
+    -->
+    <section class="section gallery-archive-section light-section locked-gallery-content" aria-hidden="true">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Family Photo Archive</p>
+          <h2>Honoring the faces, faith, and family moments that shaped our story.</h2>
+          <p>
+            These images have been moved from the Home page into the Gallery, so the Home page stays focused
+            while the family archive has its own dedicated place.
+          </p>
+        </div>
+        <div class="gallery-grid family-gallery-grid reveal" id="galleryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><p>Honoring Our Legacy, Celebrating Our Present, Building Our Future.</p></div>
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+</body>
+</html>

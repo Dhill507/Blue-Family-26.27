@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Blue Covenant Family</title>
+  <meta name="description" content="Contact the Blue Covenant Family team with questions, updates, family stories, Centennial Celebration information, or volunteer interest." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand"><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><span>Blue Covenant Family</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="centennial.html">Centennial</a></li>
+        <li><a href="history.html">History & Legacy</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="container contact-hero-grid reveal">
+        <div>
+          <p class="eyebrow">Connect • Share • Serve</p>
+          <h1>Contact the Blue Covenant Family Team</h1>
+          <p>
+            Send questions, family updates, stories, photos, volunteer interest, or Centennial Celebration information directly to the family website team.
+          </p>
+        </div>
+        <div class="contact-seal-card" aria-hidden="true">
+          <span class="contact-seal-glow"></span>
+          <img src="assets/blue-covenant-seal.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-layout">
+        <aside class="contact-info-card reveal">
+          <p class="section-kicker">Family Communication</p>
+          <h2>We’d Love to Hear From You</h2>
+          <p>
+            Use this form to help keep the Blue Covenant Family connected as we prepare for the May 2027 Centennial Celebration.
+          </p>
+
+          <div class="contact-detail-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Share Family Updates</h3>
+                <p>Birthdays, milestones, announcements, accomplishments, and prayer requests.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Submit Legacy Content</h3>
+                <p>Stories, elder memories, historic photos, family documents, and archive ideas.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Centennial Questions</h3>
+                <p>Ask about registration, travel, volunteer teams, media, and celebration details.</p>
+              </div>
+            </article>
+          </div>
+        </aside>
+
+        <form class="contact-form live-contact-form reveal" data-live-mail="true" action="https://formsubmit.co/bluecovenantfamilycentennial@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Blue Covenant Family Website Contact Form" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting the Blue Covenant Family team. Your message has been received." />
+
+          <div class="form-intro">
+            <p class="section-kicker">Contact Form</p>
+            <h2>Send a Message</h2>
+            <p>Your message will be sent to <strong>bluecovenantfamilycentennial@gmail.com</strong>.</p>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <span>First Name</span>
+              <input type="text" name="First Name" placeholder="First name" required />
+            </label>
+            <label>
+              <span>Last Name</span>
+              <input type="text" name="Last Name" placeholder="Last name" required />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <span>Email Address</span>
+              <input type="email" name="Email" placeholder="name@example.com" required />
+            </label>
+            <label>
+              <span>Phone Number</span>
+              <input type="tel" name="Phone" placeholder="Phone number" />
+            </label>
+          </div>
+
+          <label>
+            <span>Relationship to the Family</span>
+            <input type="text" name="Relationship to Family" placeholder="Example: family member, descendant, guest, friend" />
+          </label>
+
+          <label>
+            <span>Reason for Contact</span>
+            <select name="Reason for Contact" required>
+              <option value="">Select a reason</option>
+              <option>Centennial Celebration Question</option>
+              <option>Volunteer Interest</option>
+              <option>Submit Family Story or Photo</option>
+              <option>Family Announcement or Update</option>
+              <option>Prayer Request</option>
+              <option>Website Support</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="Message" rows="7" placeholder="Write your message here..." required></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+
+          <p class="contact-note">
+            Note: When this site is first used live, the email service may send a quick confirmation message to activate delivery to bluecovenantfamilycentennial@gmail.com.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><p>Honoring Our Legacy, Celebrating Our Present, Building Our Future.</p></div>
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+</body>
+</html>

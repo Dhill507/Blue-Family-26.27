@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Covenant Family | Official Family Website</title>
+  <meta name="description" content="The official digital home of the Blue Covenant Family, preserving family history, faith, legacy, and the 100 Year Centennial Celebration in May 2027." />
+  <link rel="preload" as="image" href="assets/blue-covenant-seal.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="index.html" class="brand" aria-label="Blue Covenant Family home">
+        <img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family 100 Centennial Celebration seal" />
+        <span>Blue Covenant Family</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="centennial.html">Centennial</a></li>
+        <li><a href="history.html">History & Legacy</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Honoring Our Legacy • Celebrating Our Present • Building Our Future</p>
+          <h1>Official Digital Home of the Blue Covenant Family</h1>
+          <p class="hero-text">A modern, secure, faith-centered blog and media website created to preserve our history, strengthen communication, and prepare for the 100 Year Centennial Celebration in May 2027.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="centennial.html">View Centennial Details</a>
+            <a class="btn btn-outline" href="history.html">Explore Family Legacy</a>
+          </div>
+        </div>
+        <div class="hero-seal-wrap" aria-hidden="true">
+          <img class="hero-seal" src="assets/blue-covenant-seal.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+<section class="section vision-section">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Our Vision Statement</p>
+        <h2>Connecting generations through faith, family, and legacy.</h2>
+        <p class="large-quote">The Blue Covenant Family website will become the official digital home for our family—connecting generations, preserving history, celebrating our faith, and documenting God's faithfulness to our family for generations to come.</p>
+      </div>
+    </section>
+
+<section class="section light-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Family Media Hub</p>
+          <h2>Built for youth, elders, and future generations.</h2>
+          <p>This site works as a family newsroom, history archive, event center, private resource library, and celebration headquarters.</p>
+        </div>
+        <div class="card-grid four">
+          <article class="feature-card reveal"><span>01</span><h3>Family Blog</h3><p>Publish announcements, testimonies, elder wisdom, youth spotlights, milestones, and reunion updates.</p></article>
+          <article class="feature-card reveal"><span>02</span><h3>Legacy Archive</h3><p>Preserve stories, family trees, old photographs, recordings, and historical documents.</p></article>
+          <article class="feature-card reveal"><span>03</span><h3>Centennial HQ</h3><p>Centralize schedules, registration updates, committee notes, volunteer needs, and May 2027 details.</p></article>
+          <article class="feature-card reveal"><span>04</span><h3>Private Resources</h3><p>Offer a simple password-protected area for family-only content and planning resources.</p></article>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <p class="section-kicker">Latest Updates</p>
+          <h2>Family Announcements</h2>
+        </div>
+        <div class="stack-list reveal" id="announcementList"></div>
+      </div>
+    </section>
+
+    <section class="section blue-section">
+      <div class="container split">
+        <div class="reveal">
+          <p class="section-kicker gold-text">Family Members Only</p>
+          <h2>Password-Protected Family Content</h2>
+          <p>Use this demo area for planning documents, committee updates, private links, and family-only resources.</p>
+        </div>
+        <div class="password-card reveal">
+          <h3>Private Family Login</h3>
+          <p>Enter the family password to unlock protected content.</p>
+          <input id="familyPassword" type="password" placeholder="Enter password" autocomplete="current-password" />
+          <button class="btn btn-primary" id="unlockBtn">Unlock Content</button>
+          <p class="form-message" id="passwordMessage"></p>
+          <div class="protected-content" id="protectedContent">
+            <h4>Protected Resources</h4>
+            <ul>
+              <li>Centennial planning notes</li>
+              <li>Volunteer committee updates</li>
+              <li>Family directory instructions</li>
+              <li>Private reunion resources</li>
+            </ul>
+          </div>
+          <small>Demo password: <strong>bluefamily100</strong></small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img src="assets/blue-covenant-seal.png" alt="Blue Covenant Family seal" /><p>Honoring Our Legacy, Celebrating Our Present, Building Our Future.</p></div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
